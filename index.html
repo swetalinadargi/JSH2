@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">DESISION MAKING</h1>
+    <p>Q1:Calculator</p>
+    <p>Ans:
+        const Calculator = (A, B, C) => 
+        {
+        switch(A){
+          case "+":return B+C;
+          case "-":return B-C;
+          case "/":return B/C;
+          case "*":return B*C;
+          
+        }	
+            
+        };
+    </p>
+    <p>Q2:Check whether the condition is fulfilled or not?</p>
+    <p>Ans:
+      const Check_divisibility = (N) => {
+        if(N%6==0 || N%9==0){
+          return "Divisibal by both";
+        }
+    else{
+      return "Not Divisibal by both";
+    }
+        
+    };
+
+    </p>
+    <p>Q3:Eligible Voter</p>
+    <p>Ans:
+        const isEligible = (a) => {
+            if(a>=18) {
+              return "Eligible for Voting";
+            }
+            else{
+              return "Not Eligible for Voting" 
+            }
+         };
+    </p>
+    <p>Q4:Find Relation</p>
+    <p>Ans:
+        const findRelation = (x,y) => {
+            if(x<y) {
+              return x + " is smaller than " + y;
+            }
+            else if(x>y) {
+              return x + " is greater than " + y;
+            }
+            else {
+              return x + " is equal to " + y;
+            }
+           };
+
+    </p>
+    <p>Q5:Find Grades</p>
+    <p>Ans:
+      const findGrades = (a) => {
+        if(a<=10){
+          return "E";
+        }
+        else if(a>=11 && a<=20){
+          return "D";
+        }
+        else if(a>=21 && a<=30){
+          return "C";
+        }
+        else if(a>=31 && a<=40){
+          return "B";
+        }
+        else{
+          return "A";
+        }
+     };
+
+    </p>
+    <p>Q6:Get Value</p>
+    <p>Ans:
+      const getValue = (a) => {
+        if(a=="p" || a=="P"){
+        return "PrepBytes";
+        }
+        else if(a=="Z" || a=="z"){
+          return "Zenith";
+        }
+        else if(a=="E" || a=="e"){
+          return "Expert Coder";
+        }
+        else if(a=="D" || a=="d"){
+         return "Data Structure";
+        }
+        else{
+          return undefined
+        }
+    };
+
+    </p>
+    <p>Q7:Find the maximum out of three numbers.</p>
+    <p>Ans:
+      const Max_out_of_three = (A,B,C) => {
+        if (A!=B && B!=C && C!=A)  {
+          if(A>B && A>C){
+            return A
+          }
+          else if (B>A && B>C){
+            return B
+          }
+          else{
+            return C
+          }
+        }
+        else{
+          return "-1"
+        }
+      
+      };
+      
+
+    </p>
+    <p>Q8:Second Smallest</p>
+    <p>Ans:
+      const findSndSmallest = (x,y,z) => {
+        if((x<y && y<z) || (y<x && y>z)){
+          return y;
+        }
+        //
+          else if((y<x && x<z) || (x<y && x>z)){
+            return x;
+          }
+          else{
+            return z;
+          }
+        
+     
+     };
+     
+
+    </p>
+    <p>Q9:Check whether the triangle is Acute or Obtuse</p>
+    <p>Ans:
+        const Triangle_Check = (A,B,C) => {
+            if(A<90 && B<90 && C<90){
+              return "acute";
+            }
+        else{
+          return "obtuse";
+        }
+            
+        };
+
+    </p>
+</body>
+</html>
